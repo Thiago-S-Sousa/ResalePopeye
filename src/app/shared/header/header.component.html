@@ -4,7 +4,10 @@
     alt="logo popeye açaí e vitaminas"
     id="logo"
   />
-  <nav>
+  <aside id="navbar" (click)="toglleNavbar()">
+    <fa-icon [icon]="faIcon"></fa-icon>
+  </aside>
+  <nav [ngClass]="{ active: openNavbar }">
     <ul id="internal-links">
       <li>Home</li>
       <li>Peça aqui</li>
