@@ -69,7 +69,6 @@
 
 @media only screen and (max-width: 858px) {
   .header {
-    position: fixed;
     padding: 1.5rem 0;
 
     img {
@@ -88,17 +87,26 @@
       position: fixed;
 
       flex-direction: column;
+      justify-content: space-evenly;
       gap: 0rem;
 
       height: 100dvh;
       width: 100%;
       background-color: #73293d;
-      top: 10rem;
+      top: 0;
       right: -100%;
       transition: all 0.5s;
+      opacity: 0.8;
+
+      .xmark {
+        position: absolute;
+
+        top: 0;
+        right: 0;
+        margin: 2.5rem 6.5rem 0 0;
+      }
 
       ul {
-        height: calc(100% - 10rem);
         width: 100%;
         text-align: center;
       }
@@ -119,9 +127,12 @@
         }
       }
 
+      #internal-links:hover {
+        cursor: none;
+      }
+
       #external-links {
         font-size: 4.2rem;
-        // gap: 2.5rem;
 
         li:hover {
           color: #f2d5a0;
@@ -131,6 +142,7 @@
 
     nav.active {
       right: 0;
+      opacity: 1;
     }
   }
 }

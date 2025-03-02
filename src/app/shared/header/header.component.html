@@ -5,9 +5,12 @@
     id="logo"
   />
   <aside id="navbar" (click)="toglleNavbar()">
-    <fa-icon [icon]="faIcon"></fa-icon>
+    <fa-icon [icon]="faBars"></fa-icon>
   </aside>
   <nav [ngClass]="{ active: openNavbar }">
+    <aside id="navbar" class="xmark" (click)="toglleNavbar()">
+      <fa-icon [icon]="faXmark"></fa-icon>
+    </aside>
     <ul id="internal-links">
       <li>Home</li>
       <li>Peça aqui</li>

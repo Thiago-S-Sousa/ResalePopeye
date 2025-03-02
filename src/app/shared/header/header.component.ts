@@ -5,7 +5,7 @@ import {
   faWhatsapp,
 } from '@fortawesome/free-brands-svg-icons';
 import {
-  faGripLines,
+  faBars,
   faXmark,
   IconDefinition,
 } from '@fortawesome/free-solid-svg-icons';
@@ -16,7 +16,7 @@ import {
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  faGripLines = faGripLines;
+  faBars = faBars;
   faXmark = faXmark;
 
   faWhatsapp = faWhatsapp;
@@ -24,13 +24,13 @@ export class HeaderComponent {
   faFacebook = faFacebook;
 
   openNavbar: boolean = false;
-  faIcon: IconDefinition = faGripLines;
+  faIcon: IconDefinition = faBars;
 
   toglleNavbar() {
     this.openNavbar = !this.openNavbar;
 
-    this.openNavbar === true
-      ? (this.faIcon = this.faXmark)
-      : (this.faIcon = this.faGripLines);
+    // this.openNavbar === true
+    //   ? (this.faIcon = this.faXmark)
+    //   : (this.faIcon = this.faBars);
   }
 }
