@@ -24,7 +24,7 @@ export class HeaderComponent {
   faFacebook = faFacebook;
 
   openNavbar: boolean = false;
-  faIcon: IconDefinition = faBars;
+  // faIcon: IconDefinition = faBars;
 
   toglleNavbar() {
     this.openNavbar = !this.openNavbar;
@@ -33,4 +33,8 @@ export class HeaderComponent {
     //   ? (this.faIcon = this.faXmark)
     //   : (this.faIcon = this.faBars);
   }
+
+  linkWhatsapp: string = '';
+  linkInstagram: string = 'https://www.instagram.com/popeyeacai';
+  linkFacebook: string = 'https://www.facebook.com/popeyeacai';
 }

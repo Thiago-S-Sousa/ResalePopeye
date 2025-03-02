@@ -18,9 +18,21 @@
       <li>Contato</li>
     </ul>
     <ul id="external-links">
-      <li><fa-icon [icon]="faWhatsapp"></fa-icon></li>
-      <li><fa-icon [icon]="faInstagram"></fa-icon></li>
-      <li><fa-icon [icon]="faFacebook"></fa-icon></li>
+      <li>
+        <a [href]="linkWhatsapp" target="_blank">
+          <fa-icon [icon]="faWhatsapp"></fa-icon>
+        </a>
+      </li>
+      <li>
+        <a [href]="linkInstagram" target="_blank">
+          <fa-icon [icon]="faInstagram"></fa-icon>
+        </a>
+      </li>
+      <li>
+        <a [href]="linkFacebook" target="_blank">
+          <fa-icon [icon]="faFacebook"></fa-icon>
+        </a>
+      </li>
     </ul>
   </nav>
 </header>
